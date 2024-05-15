@@ -1,8 +1,45 @@
-.section {
+/* .section {
     margin: 0 auto;
     text-align: center;
 }
 .para p{
     margin: auto;
     width: 300px;
+} */
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: aqua;
+    animation: moving 2s linear 5s infinite;
+    
+}
+@keyframes moving {
+    0% {
+        transform: translate(0, 0);
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    25% {
+        transform: translate(30px, 20px);
+        transform: scale(0.5);
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+    50% {
+        margin-left: 200px;
+        margin-top: 200px;
+        transform: scale(1);
+    }
+    75% {
+        margin-left: 10px;
+        margin-top: 200px;
+        transform: scale(0.5);
+    }
+    100% {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
 }
